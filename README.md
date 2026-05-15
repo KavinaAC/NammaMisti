@@ -41,7 +41,7 @@ Displays application banner, labour image, title, and app description with Get S
 Allows users to sign in using mobile number and password validation.
 
 3. Main Menu Screen
-
+![MainMenu](screenshots/WelcomeScreen.png)
 Provides dashboard access to all construction management tools.
 
 4. Material Calculator
