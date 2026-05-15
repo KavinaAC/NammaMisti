@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#EEF2FB">
+
+    <!-- IMAGE -->
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/labour_img"
+        android:scaleType="fitCenter"/>
+
+    <!-- TITLE -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ಮತ್ತೆ ಸ್ವಾಗತ"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        android:layout_marginTop="15dp"/>
+
+    <!-- SUB TITLE -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ಮುಂದುವರಿಸಲು ಲಾಗಿನ್ ಮಾಡಿ"
+        android:textSize="16sp"
+        android:textColor="#607D8B"
+        android:layout_marginTop="6dp"/>
+
+    <!-- MOBILE NUMBER -->
+
+    <EditText
+        android:id="@+id/etMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ"
+        android:inputType="phone"
+        android:background="@android:drawable/edit_text"
+        android:padding="14dp"
+        android:layout_marginTop="35dp"/>
+
+    <!-- PASSWORD -->
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ಪಾಸ್ವರ್ಡ್ ನಮೂದಿಸಿ"
+        android:inputType="textPassword"
+        android:background="@android:drawable/edit_text"
+        android:padding="14dp"
+        android:layout_marginTop="18dp"/>
+
+    <!-- LOGIN BUTTON -->
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="ಸೈನ್ ಇನ್"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#0D47A1"
+        android:layout_marginTop="28dp"/>
+
+</LinearLayout>

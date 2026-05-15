@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF2FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- BIG BANNER -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:background="#0D47A1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/labour_img"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ನಮ್ಮ ಮಿಸ್ತ್ರಿ"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="34sp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <!-- DESCRIPTION -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ಸಾಮಗ್ರಿ ಲೆಕ್ಕಾಚಾರ, ಕಾರ್ಮಿಕ ನಿರ್ವಹಣೆ, ಯೋಜನೆ ಅಂದಾಜು, ಬುಕ್ಕಿಂಗ್ ಸೇವೆಗಳು ಮತ್ತು ಸೈಟ್ ನಿರ್ವಹಣೆಗೆ ನಿಮ್ಮ ವಿಶ್ವಾಸಾರ್ಹ ನಿರ್ಮಾಣ ಸಹಭಾಗಿ."
+            android:textSize="18sp"
+            android:textColor="#37474F"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginTop="30dp"/>
+
+        <!-- FEATURES -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✔ ಸಾಮಗ್ರಿ ಲೆಕ್ಕಾಚಾರ"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✔ ಕಾರ್ಮಿಕ ನಿರ್ವಹಣೆ"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✔ ಯೋಜನೆ ಅಂದಾಜು"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✔ ಬುಕ್ಕಿಂಗ್ ಮತ್ತು ಸೈಟ್ ಟಿಪ್ಪಣಿಗಳು"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <!-- BUTTON -->
+
+        <Button
+            android:id="@+id/btnGetStarted"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="ಪ್ರಾರಂಭಿಸಿ"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#0D47A1"
+            android:layout_marginTop="35dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

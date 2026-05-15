@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEF2FB">
+
+    <!-- TOP BAR -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#0D47A1"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:elevation="6dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            app:tint="@android:color/white"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/labour_img"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ನಮ್ಮ ಮಿಸ್ತ್ರಿ"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_dialog_info"
+            app:tint="@android:color/white"/>
+
+    </LinearLayout>
+
+    <!-- CONTENT -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <!-- BANNER -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/banner_bg"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/labour_img"
+                    android:scaleType="fitCenter"
+                    android:layout_marginEnd="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ನಮ್ಮ ಮಿಸ್ತ್ರಿ"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:textSize="30sp"/>
+
+                    <View
+                        android:layout_width="44dp"
+                        android:layout_height="3dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#FFD54F"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ನಿಮ್ಮ ನಿರ್ಮಾಣ ಸಹಭಾಗಿ"
+                        android:textColor="#DDEEFF"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- SECTION TITLE -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ತ್ವರಿತ ಉಪಕರಣಗಳು"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#0D47A1"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- GRID -->
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3">
+
+                <!-- MATERIAL -->
+
+                <LinearLayout
+                    android:id="@+id/materialCard"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/card_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_menu_manage"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ಸಾಮಗ್ರಿ\nಲೆಕ್ಕಾಚಾರ"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:textColor="#1A237E"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+                <!-- PROJECT -->
+
+                <LinearLayout
+                    android:id="@+id/projectCard"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/card_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_menu_edit"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ಯೋಜನೆ\nಅಂದಾಜು"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:textColor="#1A237E"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+                <!-- LABOUR -->
+
+                <LinearLayout
+                    android:id="@+id/labourCard"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/card_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_menu_my_calendar"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ಕಾರ್ಮಿಕ\nಲೆಕ್ಕಾಚಾರ"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:textColor="#1A237E"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+                <!-- RATE -->
+
+                <LinearLayout
+                    android:id="@+id/rateCard"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/card_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_menu_sort_by_size"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ದರ\nವಿಶ್ಲೇಷಣೆ"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:textColor="#1A237E"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+                <!-- SITE -->
+
+                <LinearLayout
+                    android:id="@+id/siteCard"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/card_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_menu_agenda"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ಸೈಟ್\nಟಿಪ್ಪಣಿಗಳು"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:textColor="#1A237E"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+                <!-- UNIT -->
+
+                <LinearLayout
+                    android:id="@+id/unitCard"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/card_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_menu_crop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ಘಟಕ\nಪರಿವರ್ತಕ"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:textColor="#1A237E"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+                <!-- BOOKING -->
+
+                <LinearLayout
+                    android:id="@+id/bookingCard"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/card_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_menu_call"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ಬುಕಿಂಗ್"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:textColor="#1A237E"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+                <!-- PROJECTS -->
+
+                <LinearLayout
+                    android:id="@+id/projectsCard"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/card_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_menu_slideshow"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ನನ್ನ\nಯೋಜನೆಗಳು"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:textColor="#1A237E"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+                <!-- PROFILE -->
+
+                <LinearLayout
+                    android:id="@+id/profileCard"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/card_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_menu_myplaces"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ಪ್ರೊಫೈಲ್"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:textColor="#1A237E"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- BOTTOM NAVIGATION -->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:itemIconTint="#0D47A1"
+        app:itemTextColor="#0D47A1"
+        app:labelVisibilityMode="labeled"
+        app:itemHorizontalTranslationEnabled="false"
+        app:menu="@menu/bottom_menu"/>
+
+</LinearLayout>
