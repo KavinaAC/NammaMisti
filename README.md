@@ -2,7 +2,7 @@
 
 ![Login Page](screenshots/LoginScreen.png)
 
-![MainMenu](screenshots/WelcomeScreen.png)
+![MainMenu](screenshots/MainScreen.png)
 
 Namma Mistri – Construction Management Android Application
 Overview
