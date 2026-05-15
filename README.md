@@ -1,4 +1,4 @@
-![Image Name](Namma Mistri UI screenshots/filename.png)
+![Image Name](Namma Mistri UI screenshots/WelcomeScreen.png)
 
 Namma Mistri – Construction Management Android Application
 Overview
