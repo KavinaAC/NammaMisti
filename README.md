@@ -37,7 +37,7 @@ Application Modules
 Displays application banner, labour image, title, and app description with Get Started button.
 
 2. Login Screen
-
+![Login Page](screenshots/LoginScreen.png)
 Allows users to sign in using mobile number and password validation.
 
 3. Main Menu Screen
